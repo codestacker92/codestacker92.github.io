@@ -53,6 +53,27 @@ header {
   color: #fff;
 }
 
+.social-media {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+  color: #0077ff;
+  transform: scale(1.2);
+}
+
+.brand-name {
+  color: red;
+  font-weight: bold; /* optional for emphasis */
+}
 
     #bioPic {
       width: 250px;
