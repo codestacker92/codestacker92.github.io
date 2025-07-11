@@ -24,6 +24,7 @@ header {
   text-shadow: 3px 3px 7px #000;
 }
 #about {
+  display: flex;
   width: 100%;
   height: 900px;
 }
@@ -32,13 +33,27 @@ header {
     height: 900px;
     padding: 25px 50px;
     padding-top: 50px;
-    background: linear-gradient(#777, #555);
+    background: linear-gradient(#b2b5b6, #43abaf);
     font-size: 1.3em;
     border-right: 1px solid #000;
   }
     #aboutLeft > p {
       margin: 20px 0;
     }
+    .skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+    .skill-item p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+
     #bioPic {
       width: 250px;
       border-radius: 25%;
@@ -52,7 +67,10 @@ header {
     width: 50%;
     height: 900px;
     padding: 25px 50px;
-    background: linear-gradient(#ccc, #999);
+    padding-top: 50px;
+    background: linear-gradient(#b2b5b6, #43abaf);
+    font-size: 1.3em;
+    border-right: 1px solid #000;
     text-align: center;
   }
     #aboutRight > p {
@@ -61,15 +79,34 @@ header {
 
 footer {
   width: 100%;
-  height: 100px;
+  height: auto;
+  padding: 20px 0;
+  background: linear-gradient(to right, #1971b9, #c6cce2, #4f5b70);
+  color: #000;
   text-align: center;
-  padding-top: 18px;
-  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
-  font-size: .9em;
-  border-top: 1px solid #dd8080;
+  font-size: 0.9em;
+  border-top: 1px solid #aa6a6a;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 #about::after {
   content: "";
   display: table;
   clear: both;
+}
+@media (max-width: 768px) {
+  #aboutLeft, #aboutRight {
+    width: 100%;
+  }
 }

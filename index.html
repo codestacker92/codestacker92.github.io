@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Devicon icon font -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  />
+
+  <!-- Your custom icon sizing -->
+  <style>
+    .skill-icon {
+      font-size: 3em;       /* control icon size */
+      margin: 0.5em;        /* spacing around each icon */
+      vertical-align: middle;
+    }
+    /* for SVG logos you use <img>, keep same spacing */
+    .skill-icon-img {
+      height: 48px;         /* approx 3em */
+      margin: 0.5em;
+      vertical-align: middle;
+    }
+  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/app.css">
@@ -10,6 +30,10 @@
   <title>My Protfilio</title>
 </head>
 <body>
+  <div id="mainContent">
+    <!--header, about, my skills-->
+  </div>
+
   <header>
     <h1 class="pressStart">Welcome to My Portfolio...</h1>
   </header>
@@ -19,16 +43,59 @@
       <h2 style="font-size: 1.3em; margin-bottom: 20px;">👨‍💻 About Me</h2>
       <h2 style="font-size: 1.1em; margin-bottom: 20px;">Codestacker92</h2>
       <p style="font-size: .8em; line-height: 1.6;">
-       Hello! I'm <strong>Firas Altaweel</strong>, a passionate web developer.
+       Hello! I'm <strong>Firas Altaweel</strong>, a passionate web developer. I'm a Student now at trIOS College in the Web Development program.
        I specialize in building clean, modern websites and web apps using the latest technologies.
        With a background in both business and design, I bring a creative and logical approach to every project.
-       I'm currently focused on expanding my skills in html, vss, css, and backend development.
+       I'm currently focused on expanding my skills in html, vss code, css, java script, AutiCad, and backend development.
        When I’m not coding, you can find me exploring new tech tools, learning UI/UX design trends, or enjoying nature walks.
       </p>
     </div>
 
     <div id="aboutRight">
-      <h2>My Skills</h2>
-      
-        </div>
-  <section>
+  <h2>🛠️ My Skills</h2>
+
+  <div class="skills-container" 
+       style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; text-align: center;">
+    
+    <!-- HTML -->
+    <div class="skill-item">
+      <i class="devicon-html5-plain skill-icon" title="HTML5"></i>
+      <p>HTML5</p>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill-item">
+      <i class="devicon-css3-plain skill-icon" title="CSS3"></i>
+      <p>CSS3</p>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-item">
+      <i class="devicon-javascript-plain skill-icon" title="JavaScript"></i>
+      <p>JavaScript</p>
+    </div>
+
+    <!-- VS Code -->
+    <div class="skill-item">
+      <i class="devicon-vscode-plain skill-icon" title="VS Code"></i>
+      <p>VS Code</p>
+    </div>
+
+    <!-- Adobe XD -->
+    <div class="skill-item">
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg"
+        alt="Adobe XD"
+        class="skill-icon-img"
+        title="Adobe XD"
+      />
+      <p>Adobe XD</p>
+     </div>
+  </div>
+    </section>
+<footer>
+    <p>&copy; 2025 Codestacker92. All rights reserved.</p>
+    <p>Designed with ❤️ by Firas Altaweel</p>
+</footer>
+</body>
+</html>
