@@ -1,108 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Devicon icon font -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-  />
-
-  <!-- Your custom icon sizing -->
-  <style>
-    .skill-icon {
-      font-size: 3em;       /* control icon size */
-      margin: 0.5em;        /* spacing around each icon */
-      vertical-align: middle;
-    }
-    /* for SVG logos you use <img>, keep same spacing */
-    .skill-icon-img {
-      height: 48px;         /* approx 3em */
-      margin: 0.5em;
-      vertical-align: middle;
-    }
-  </style>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firas Altaweel | Web Developer</title>
+
+  <!-- Link CSS -->
   <link rel="stylesheet" href="css/app.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <title>My Protfilio</title>
 </head>
+
 <body>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-  <div id="mainContent">
-    <!--header, about, my skills-->
+
+<!-- HEADER -->
+<header>
+  <h1>Firas Altaweel</h1>
+  <p>Web Development Student · triOS College</p>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi, I’m <strong>Firas Altaweel</strong>, a Web Development student at triOS College. I enjoy building clean, modern websites using HTML, CSS, and JavaScript. </p>
+  <p>I’m currently seeking a <strong>2-month Web Development internship starting January 2026</strong>.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Camp Prepper! – Interactive Checklist</h3>
+    <p>A JavaScript DOM app where users check 8 items; the button changes to “Go Camping”.</p>
   </div>
 
-  <header>
-    <h1 class="pressStart">Welcome to My Portfolio...</h1>
-  </header>
-  <section id="about">
-    <div id="aboutLeft">
-      <img src="assets/images/myimage.jpg" alt="Bio Picture" id="bioPic">
-      <h2 style="font-size: 1.3em; margin-bottom: 20px;">👨‍💻 About Me</h2>
-      <h2 style="font-size: 1.1em; margin-bottom: 20px;">Codestacker92</h2>
-      <p style="font-size: .8em; line-height: 1.6;">
-       Hello! I'm <strong>Firas Altaweel</strong>, a passionate web developer. I'm a Student now at trIOS College in the Web Development program.
-       I specialize in building clean, modern websites and web apps using the latest technologies.
-       With a background in both business and design, I bring a creative and logical approach to every project.
-       I'm currently focused on expanding my skills in html, vss code, css, java script, AutiCad, and backend development.
-       When I’m not coding, you can find me exploring new tech tools, learning UI/UX design trends, or enjoying nature walks.
-      </p>
-    </div>
-
-    <div id="aboutRight">
-  <h2>🛠️ My Skills</h2>
-
-  <div class="skills-container" 
-       style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; text-align: center;">
-    
-    <!-- HTML -->
-    <div class="skill-item">
-      <i class="devicon-html5-plain skill-icon" title="HTML5"></i>
-      <p>HTML5</p>
-      <p>1 Year Experiance</p>
-    </div>
-
-    <!-- CSS -->
-    <div class="skill-item">
-      <i class="devicon-css3-plain skill-icon" title="CSS3"></i>
-      <p>CSS3</p>
-      <p>1 Year Experiance</p>
-    </div>
-
-    <!-- JavaScript -->
-    <div class="skill-item">
-      <i class="devicon-javascript-plain skill-icon" title="JavaScript"></i>
-      <p>JavaScript</p>
-      <p>1 Year Experiance</p>
-    </div>
-
-    <!-- VS Code -->
-    <div class="skill-item">
-      <i class="devicon-vscode-plain skill-icon" title="VS Code"></i>
-      <p>VS Code</p>
-      <p>1 Year Experiance</p>
-    </div>
-
-   
+  <div class="project">
+    <h3>Travel Website – 12-Column CSS Grid</h3>
+    <p>A multi-page responsive travel site using your own Grid layout from class.</p>
   </div>
-    </section>
+
+  <div class="project">
+    <h3>Shopping Cart Demo</h3>
+    <p>Dynamic JS cart: add items, update total, item count, and display cart list.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS3 (Flexbox, Grid)</li>
+    <li>JavaScript (DOM, events)</li>
+    <li>VS Code</li>
+    <li>Git & GitHub</li>
+    <li>Adobe XD, Photoshop, Illustrator</li>
+    <li>AutoCAD</li>
+    <li>Java (OOP basics)</li>
+    <li>Swift (beginner)</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p><strong>Email:</strong> <a href="mailto:firasaleas_92@yahoo.com">firasaleas_92@yahoo.com</a></p>
+  <p><strong>Phone:</strong> <a href="tel:+13657791992">+1 (365) 779-1992</a></p>
+  <p><strong>Location:</strong> St. Thomas, Ontario</p>
+
+  <p>
+    <a href="https://github.com/codestacker92" target="_blank">GitHub</a> •
+    <a href="https://www.linkedin.com/in/firas-altaweel-848314374/" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>&copy; 2025 <span class="brand-name">Codestacker92</span>. All rights reserved.</p>
-    <p>Designed with ❤️ by Firas Altaweel</p>
-    <div class="social-media">
-    <a href="https://www.facebook.com/firasaleas" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://x.com/altaweelfi34059?s=11" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.instagram.com/firas.aleas/#" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/codestacker92" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="mailto:firasaleas_92@yahoo.com"><i class="fas fa-envelope"></i></a>
-
-    </div>
+  © <span id="year"></span> Firas Altaweel · Built with HTML, CSS & JavaScript
 </footer>
+
+<!-- Link JS -->
+<script src="scripts/app.js"></script>
+
 </body>
 </html>
