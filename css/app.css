@@ -84,6 +84,16 @@ section {
   border-radius: 10px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.35);
+
+  /* reveal animation defaults (js will add .visible) */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Section titles */
@@ -142,11 +152,11 @@ h2 {
 
 .hero-buttons {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-/* Buttons */
+/* Hero buttons */
 .btn-primary,
 .btn-secondary {
   padding: 10px 18px;
@@ -213,6 +223,43 @@ h2 {
   color: #4b5563;
 }
 
+/* Project buttons */
+.project-buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #111827;
+  transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.btn-small:hover {
+  background: #e5e7eb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.25);
+}
+
+.btn-small.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-small.primary:hover {
+  background: #1d4ed8;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.4);
+}
+
 /* =============== */
 /* SKILLS          */
 /* =============== */
@@ -242,21 +289,6 @@ h2 {
 #contact a:hover {
   text-decoration: underline;
 }
-/* =============== */
-/* REVEAL EFFECT   */
-/* =============== */
-
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 /* =============== */
 /* FOOTER          */
